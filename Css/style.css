@@ -31,7 +31,7 @@ body {
   color: #009ad8;
 }
 .search {
-  background-image: url(/images/banner.png);
+  background-image: url(../images/banner.png);
   min-height: 300px;
   background-size: cover;
   padding-block: 70px;
