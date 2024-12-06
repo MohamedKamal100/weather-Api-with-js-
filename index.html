@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ?Style -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-dark">
+    <div class="header bg-dark py-4">
+      <nav class="navbar navbar-expand-lg text-white">
+        <div class="container">
+          <div class="logo">
+            <a
+              class="d-flex align-items-center justify-content-center g-1 navbar-brand"
+              href="#"
+              ><img
+                class="me-2"
+                src="images/logo@2x.png"
+                width="60"
+                height="40"
+                alt=""
+              />
+              <div>
+                <h1 class="header text-white fw-semibold fs-6">Weather</h1>
+                <small class="tagline">tagline goes here</small>
+              </div>
+            </a>
+          </div>
+
+          <button
+            class="navbar-toggler text-bg-danger"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="menu list-unstyled d-flex justify-content-center align-items-center ms-auto gap-4 me-4"
+            >
+              <li class="item nav-link current">
+                <a href="#">Home</a>
+              </li>
+              <li class="item nav-link"><a href="#">News</a></li>
+              <li class="item nav-link"><a href="#">Live cameras</a></li>
+              <li class="item nav-link"><a href="#">Photos</a></li>
+              <li class="item nav-link"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="search">
+      <div class="container">
+        <div class="form">
+          <input
+            class="w-100 searchInput border-0"
+            type="text"
+            name="findLocation"
+            placeholder="Find your location..."
+          />
+          <a
+            href="#"
+            class="find text-white text-decoration-none d-flex align-items-center justify-content-center"
+            >Find</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="container">
+        <div class="forecast-container w-100">
+          <div class="row g-0" id="forecast"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <form action="#" class="subscribe">
+              <input
+                class="w-100 border-0"
+                type="text"
+                name="Email"
+                placeholder="Enter your email to subscribe..."
+              />
+              <a
+                href="#"
+                class="find text-white text-decoration-none d-flex align-items-center justify-content-center"
+                >Subscribe</a
+              >
+            </form>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <div
+              class="social-links d-flex align-items-center justify-content-center gap-2"
+            >
+              <a href="#" class="text-decoration-none"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" class="text-decoration-none"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="text-decoration-none"
+                ><i class="fa-brands fa-google-plus"></i
+              ></a>
+              <a href="#" class="text-decoration-none"
+                ><i class="fa-brands fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <p>
+          Copyright 2014 Company name. Designed by Arbawy. All rights reserved
+        </p>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
