@@ -6,10 +6,11 @@ var monthNames = ["January", "February", "March", "April", "May", "June", "July"
 
 // Fetch weather data from the WeatherAPI
 async function getWeather(cityName) {
-
+  var apiKey = "fdce13cd590849da8e591745240512";
+  var url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${cityName}&days=3`;
 
   try {
-    var response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=fdce13cd590849da8e591745240512&q=07112&q=${cityName}&days=3`);
+    var response = await fetch(url);
     if (response.ok) {
       var cityWeather = await response.json();
       display(cityWeather.location, cityWeather.current);
